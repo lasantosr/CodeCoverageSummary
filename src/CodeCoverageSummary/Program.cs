@@ -225,6 +225,8 @@ namespace CodeCoverageSummary
                     i++;
                 }
 
+                summary.Packages.Sort((x, y) => x.Name.CompareTo(y.Name));
+
                 return summary;
             }
             catch (Exception ex)
